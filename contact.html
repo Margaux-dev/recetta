@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <title>Recetta - Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Des recettes gourmandes pour toute la famille">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-js">
+    <a href="#" class="close-menu close-menu-js d-md-none"><i class="fas fa-times"></i> Fermer</a>
+    <div class="logo main-animate" data-animate-effect="fadeInLeft">
+      <a href="index.html" class="d-block nav-logo">Recetta</a>
+      <p>Des recettes gourmandes pour toute la famille !</p>
+    </div>
+    <div class="nav-menu-div">
+      <nav class="nav-links">
+        <ul>
+          <li class="main-animate" data-animate-effect="fadeInLeft"><a href="index.html">Recettes</a></li>
+          <li class="main-animate" data-animate-effect="fadeInLeft"><a href="about.html">À propos</a></li>
+          <li class="main-animate active" data-animate-effect="fadeInLeft"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <footer class="navbar-footer main-animate" data-animate-effect="fadeInLeft">
+        <ul class="d-flex navbar-social">
+          <li><a href="https://www.margauxdev.com" aria-label="Lien vers le site de Margaux Darriberouge"><i
+                class="fas fa-cat" aria-hidden="true"></i></a></li>
+          <li><a href="https://github.com/Margaux-dev"
+              aria-label="Lien vers le profil github de Margaux Darriberouge"><i class="fab fa-github-alt"
+                aria-hidden="true"></i></a></li>
+          <li><a href="https://codepen.io/Margaux-dev"
+              aria-label="Lien vers le profil Codepen de Margaux Darriberouge"><i class="fab fa-codepen"
+                aria-hidden="true"></i></a></li>
+        </ul>
+        <p>© 2020 | Fait avec <i class="fas fa-pizza-slice" aria-label="pizza"></i> par <a
+            href="https://www.margauxdev.com">Margaux</a></p>
+      </footer>
+    </div>
+  </nav>
+
+
+  <main role="main" class="main main-js">
+    <div class="responsive-navbar">
+      <a href="#" class="toggle-menu toggle-menu-js"><i class="fas fa-bars" aria-label="Ouvrir le menu"></i></a>
+      <div class="main-logo"><a href="index.html">Recetta</a></div>
+    </div>
+    <div class="container-fluid contact">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-12">
+          <div class="row">
+            <div class="col-xl-8 col-lg-12 mx-auto">
+              <h1>Contact</h1>
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST" onsubmit="return validateForm()">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <div class="md-form">
+                        <label for="name" class="">Nom</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <div class="md-form">
+                        <label for="email" class="">Email</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <label for="subject" class="">Sujet</label>
+                      <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <label for="message">Message</label>
+                      <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="form-button">
+                <a class="btn" onclick="validateForm()">Envoyer</a>
+              </div>
+              
+              <div class="status" id="status"></div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-md-none">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="d-flex navbar-social">
+            <li><a href="https://www.margauxdev.com" aria-label="Lien vers le site de Margaux Darriberouge"><i
+                  class="fas fa-cat" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Margaux-dev"
+                aria-label="Lien vers le profil github de Margaux Darriberouge"><i class="fab fa-github-alt"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="https://codepen.io/Margaux-dev"
+                aria-label="Lien vers le profil Codepen de Margaux Darriberouge"><i class="fab fa-codepen"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+          <p class="mobile-footer">© 2020 | Fait avec <i class="fas fa-pizza-slice" aria-label="pizza"></i> par <a
+              href="https://www.margauxdev.com">Margaux</a></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js/mail.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
